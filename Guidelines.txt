@@ -1,0 +1,8 @@
+Guidelines to speaking a program
+=================================
+Make sure you speak after the beep.
+Say  the keywords loud and clear.
+Pause feature is on the roadmap, for now you have to finish the code without pausing.
+The program flow is voice guided, all the other instructions needed to write a program are there.
+
+

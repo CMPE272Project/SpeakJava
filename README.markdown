@@ -23,6 +23,9 @@ displays system prompts to the programmers. When the java file is
 compiled or run the error stream and the output stream are written to
 customConsole pane.
 #RUNNING THE APPLICATION
+To run the application, first, download the project, add it to eclipse,
+and run the file SpeechCoder.java from cmpe272.editor package.
+See the guidelines file to execute your "hello world!" program.
 The application runs in key inmode(typing). The user can press the
 “start speech recognition mode” button to start giving the voice
 inputs. The interaction with the application is menu driven and the
