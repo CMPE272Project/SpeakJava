@@ -3,21 +3,8 @@ import cmpe272.editor.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Other package imports
 import cmpe272.classObj.*;
@@ -71,9 +58,7 @@ public class ClassCreator {
 	{	
 		//init jsons
 		try {
-			//String content = readFile("C:/Users/ashish/workspace/SpeakJava/src/menu.json", StandardCharsets.UTF_8);
-			//menu = new JSONObject(content);
-			String content = readFile("C:/Users/ashish/workspace/SpeakJava/src/validation.json", StandardCharsets.UTF_8);
+			String content = readFile("src/validation.json", StandardCharsets.UTF_8);
 			validator=new JSONObject(content).getJSONObject("validation");
 
 			} catch (JSONException e) {

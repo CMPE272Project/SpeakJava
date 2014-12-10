@@ -5,11 +5,6 @@ import javax.sound.sampled.*;
 import java.io.Closeable;
 import java.io.File;
 
-/***************************************************************************
- * Microphone class that contains methods to capture audio from microphone
- *
- * @author Luke Kuza, Aaron Gokaslan
- ***************************************************************************/
 public class Microphone implements Closeable{
 	
     /**

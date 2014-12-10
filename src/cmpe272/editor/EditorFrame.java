@@ -57,11 +57,9 @@ public class EditorFrame extends JFrame implements ActionListener {
 
 	private JPanel contentPane;
     private JFrame jEditor;
-    //final JEditorPane codeEditor;
     private  JEditorPane codeEditor;
     public JTextArea consoleTextArea;
     public static PrintStream standardOut;
-    //private ClassCreator cc;
     
     public EditorFrame(String x){
     	System.out.println(x);
@@ -153,19 +151,6 @@ public class EditorFrame extends JFrame implements ActionListener {
 	 * Update the jSyntaxpane.
 	 */
 	public void updateUI1(String code, int lineno) {
-//		try {
-//		      Document doc = this.codeEditor.getDocument();
-//		      System.out.println(doc.getLength());
-//		      code=code.replace('\\', '\n');
-//		      if(lineno !=-1){
-//		    	  
-//		    	  doc.insertString(lineno, code, null);		    	  }
-//		      else
-//		      { doc.insertString(doc.getLength(), code, null);
-//		      }
-//		     } catch(BadLocationException exc) {
-//		      exc.printStackTrace();
-//		   }	
 		
 		this.codeEditor.setText(code);
 	}
@@ -185,14 +170,8 @@ public class EditorFrame extends JFrame implements ActionListener {
             	ClassCreator cc = new ClassCreator();
             	cc.createClass();
                 //while (true) {
-                    System.out.println("Time now is " + (new Date()));
-//                    try {
-//                        Thread.sleep(1000);
-//                    } catch (InterruptedException ex) {
-//                        ex.printStackTrace();
-//                    }
-//                }
-            }
+                System.out.println("Time now is " + (new Date()));
+           }
         });
         thread.start();
 		
@@ -277,7 +256,7 @@ public class EditorFrame extends JFrame implements ActionListener {
 	        out.close();
 	        if(f.exists())
 			{	
-			System.out.println(filename+".java Saved Successfully.");
+	        	System.out.println(filename+".java Saved Successfully.");
 			}
 	        else
 	        {
@@ -302,7 +281,7 @@ public class EditorFrame extends JFrame implements ActionListener {
 		{
 		try {
 			System.out.println("Compliling Java program "+f.getName()+".......");
-			Process p1=Runtime.getRuntime().exec("C:\\Program Files\\Java\\jdk1.7.0_65\\bin\\javac "+f.getName());
+			Process p1=Runtime.getRuntime().exec("javac "+f.getName());
 			if(f1.exists()&& !f.isDirectory())
 			{	
 				System.out.println(filename+".class Created.");
@@ -316,13 +295,13 @@ public class EditorFrame extends JFrame implements ActionListener {
 	            }			
 			}
 			int exitVal = p1.waitFor();
-			//System.exit(0);
+			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		}
@@ -355,18 +334,13 @@ public class EditorFrame extends JFrame implements ActionListener {
                 System.out.println(s);
             }
 			int exitVal = p.waitFor();
-			//System.exit(0);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//SpeechCoder sc = new SpeechCoder();
+		
 		catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		}
-	}
-	
-	
+	}	
 }

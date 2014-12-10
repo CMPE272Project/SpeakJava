@@ -4,8 +4,6 @@ import cmpe272.speech2text.recognizer.*;
 
 import javax.sound.sampled.AudioFileFormat;
 import javax.sound.sampled.LineUnavailableException;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,20 +17,16 @@ public class Speech {
 	private List<String> lst;
 	private FlacEncoder flacEncoder;
 	private AudioClip clip;
-	//private File waveFile;
-	//private File flacFile;
 	private int count=0;
 	
 	public Speech()
 	{	
-		//waveFile = new File("temp.wav");
-		//flacFile = new File("temp.flac");
 		mic = new Microphone(AudioFileFormat.Type.WAVE);
 		recognize= new RecognizerChunked("AIzaSyBTwtRpwRDtMTBtdzjR3HHsf6DwUTNwHQA");
 		lst= new ArrayList<String>();
 		flacEncoder=new FlacEncoder();
 		try {
-			clip = Applet.newAudioClip(new URL("file:///C:/Users/ashish/workspace/SpeakJava/sounds/beep.wav"));
+			clip = Applet.newAudioClip(new URL(new URL("file:"), "sounds/beep.wav"));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
@@ -81,8 +75,9 @@ public class Speech {
 	        if(lst!=null)
 	        {
 	        	out=lst.get(0);
-	        	if(out.equals("pause"))
-	        		{ out=pauseExec();}
+	        	//uncomment for pause  feature
+	        	//if(out.equals("pause"))
+	        		//{ out=pauseExec();}
 	        }
 	        		
 	     

@@ -1,13 +1,6 @@
 package cmpe272.editor;
 
-import java.util.Scanner;
 import java.awt.EventQueue;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-import cmpe272.app.ClassCreator;
 
 public class SpeechCoder {
 
@@ -45,6 +38,4 @@ public class SpeechCoder {
 		});
 	}
 	
-	
-
 }
