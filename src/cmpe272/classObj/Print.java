@@ -1,11 +1,7 @@
 package cmpe272.classObj;
 
-public class Print extends BodyDecorator{
+public class Print extends Body{
 
-	public Print(BodyDecorator tempBody, String description) {
-		super(tempBody, description);
-	}
-	
 	public Print(String description)
 	{
 		super(description);
@@ -17,7 +13,7 @@ public class Print extends BodyDecorator{
 		if(tempBody!=null)
 			output=tempBody.getDescription();
 		
-		output+="System.out.println(\"" + description + "\");";
+		output+="System.out.println(" + description + ");";
 		return(output);
 	}
 	

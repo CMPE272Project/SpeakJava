@@ -1,39 +1,39 @@
 package cmpe272.classObj;
 
-public class ClassVariable implements ClassComponents{
-
-	private String name;
-	private String access_specifier="public";
-	private String type;
-	private String initial_value;
+public class ClassVariable extends CompositeBody{
 	
-	@Override
+	private String name;
+	private String access_specifier;
+	private String variable_type="void";
+	
+	
+
+	
+	
+	public ClassVariable(String description)
+	{
+		super(description);
+	}
+	
+	
+	public ClassVariable(String name, String access_specifier, String variable_type)
+	{
+		this.name=name;
+		this.access_specifier=access_specifier;
+		if(variable_type!=null && variable_type!="")
+		this.variable_type=variable_type;
+		
+		description=access_specifier + " " + variable_type + " " + name + "()";
+	}
+	
 	public String getDescription() {
 		String output="";
-		output=output+access_specifier + " " + type + " " + name;
-		if(initial_value!=null)
-			output=output+" = "+initial_value; 
-		output+=";";
 		
+		output=description+ "\n{\n";
+		for(ClassComponents component: components)
+			output+=component.getDescription();
+		output+="\n}\n";
 		return output;
-	}
-
-	@Override
-	public void addChild(ClassComponents c) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void removeChild(ClassComponents c) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public ClassComponents getChild(int i) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

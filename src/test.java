@@ -1,4 +1,4 @@
-import cmpe272.app.ClassCreator;;
+import cmpe272.app.ClassCreator;
 
 public class test {
 	
@@ -7,8 +7,7 @@ public class test {
     {	
 		ClassCreator cc = new ClassCreator();
 		
-		cc.getClassDetails();
-		cc.getClassMethods();
-		cc.printClass();
+		cc.createClass();
+		
     }
 }
