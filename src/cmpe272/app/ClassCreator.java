@@ -31,6 +31,7 @@ public class ClassCreator {
 	
 	private Speech speech;
 	private TextToSpeechRunner tts;
+	private List<String> keywords = Arrays.asList("abstract","continue","for","new","switch","default","goto","package","boolean","do","for","while","if","else","double","import","try","catch","static","final","long","short","return","int","void","const","extends","float","case","byte","case","implements","throw");
 	private List<String> main_menu = Arrays.asList("class variable","class method","main method","exit");
 	private List<String> toc= Arrays.asList("general","abstract","interface");
 	private List<String> bodyOptions= Arrays.asList("declare variable","for loop","if else","while loop","assignment","function call","exit");

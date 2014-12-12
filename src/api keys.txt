@@ -1,0 +1,6 @@
+db.keys.insert( { "API keys" :
+[
+{ "Ashish" : " " },
+{" Krishna" : " " },
+{ "Keerti" : "AIzaSyBugzRG2h703NkXPxki6ATuWuy3QVL-iUU" },
+{ "Tithi" : "AIzaSyATfSSoXTvF051h75wWoZPplGHjyVpkZ14"} ] } )
