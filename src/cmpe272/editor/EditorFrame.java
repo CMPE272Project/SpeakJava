@@ -170,7 +170,8 @@ public class EditorFrame extends JFrame implements ActionListener {
             	ClassCreator cc = new ClassCreator();
             	cc.createClass();
                 //while (true) {
-                System.out.println("Time now is " + (new Date()));
+                //System.out.println("Time now is " + (new Date()));
+            	System.out.println("Thanks for using speech coder");
            }
         });
         thread.start();
@@ -186,8 +187,6 @@ public class EditorFrame extends JFrame implements ActionListener {
 		PrintStream printStream = new PrintStream(new CustomOutputStream(textArea),true);
 		System.setOut(printStream);
 		standardOut.println("CustomConsole is set to JTextPane");
-		//System.out.println("CustomConsole is set to JTextPane");
-		//System.setErr(printStream);
 	}
 	
 	
