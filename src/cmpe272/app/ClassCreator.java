@@ -89,7 +89,7 @@ public class ClassCreator {
 		
 		//writeToConsole("Select a type of class to create :",toc);
 		//type=getValidatedInput(toc);
-		
+		writeToConsole("Speech Mode Initiated . . .");
 		writeToConsole("Speak your class name:");
 		name=speech.getUserInput(2000);
 		
