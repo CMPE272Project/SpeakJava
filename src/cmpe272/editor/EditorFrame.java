@@ -213,13 +213,13 @@ public class EditorFrame extends JFrame implements ActionListener {
 	      String cmd = ((AbstractButton) e.getSource()).getText();
 	      try {
 	         if (cmd.equals("Open")) {
-	        	 openFile("Test");
+	        	 openFile("Testx");
 	         } else if (cmd.equals("Save")) 
-	        	 saveFile("Test");
+	        	 saveFile("Testx");
 	         else if (cmd.equals("Compile/Run"))
 	         {
-	        	 compileApp("Test");
-	        	 runApp("Test");
+	        	 compileApp("Testx");
+	        	 runApp("Testx");
 	         } 	 
 	      } catch (Exception f) {
 	      	 f.printStackTrace();
