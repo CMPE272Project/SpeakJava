@@ -8,6 +8,8 @@ public class TextToSpeechRunner  {
 	
 	private String voiceName ="alan";
 	
+	
+	// the speaks static contents to the user.
 	public void speak(String text){
 		
 		ITTSOnlineService ttsService = new TTSOnlineService();
