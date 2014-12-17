@@ -135,7 +135,7 @@ public class EditorFrame extends JFrame implements ActionListener {
 	    //codeEditor.setText(code);
 	        
 	        
-	    f.setSize(800, 600);
+	    f.setSize(800,900);
 	    f.setVisible(true);
 	    f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	    
