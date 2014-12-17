@@ -19,7 +19,7 @@ import java.nio.file.Paths;
 
 import org.json.*;
 
-
+// This is the main class from where all the structure creation calls are made
 public class ClassCreator {
 	
 	private MyClass myclass;
