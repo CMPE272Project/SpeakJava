@@ -1,5 +1,6 @@
 package cmpe272.classObj;
 
+//This is a composite node for FOrloop block
 public class ForLoop extends CompositeBody{
 	
 	public ForLoop(String description)
