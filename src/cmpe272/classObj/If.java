@@ -1,5 +1,6 @@
 package cmpe272.classObj;
 
+//This is a composite node for if block
 public class If extends CompositeBody{
 	
 	public If(String description)
