@@ -20,6 +20,7 @@ public class TextToSpeechRunner  {
 		
 	}
 	
+	//This prints menu items of arguments passed in the list
 	public void speak(List<String> list){
 		
 		ITTSOnlineService ttsService = new TTSOnlineService();
