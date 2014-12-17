@@ -1,5 +1,6 @@
 package cmpe272.classObj;
 
+// This is a composite node for else block
 public class Else extends CompositeBody{
 	
 	public Else(String description)
